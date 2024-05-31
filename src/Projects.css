@@ -1,0 +1,95 @@
+/* components/Projects.css */
+.head1 {
+  justify-content: start;
+  color: white;
+  background-color: #282929;
+  padding: 20px;
+  text-align: center;
+}
+
+.head2 {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+  gap: 20px; /* Gap between grid items */
+  padding: 20px;
+  background-color: #282929;
+}
+
+.project {
+  text-align: center;
+  transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  background-color: #333;
+  padding: 10px;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  border: 2px solid #61dafb;
+}
+
+.project-thumbnail {
+  width: 100%;
+  height: 200px; /* Adjust height as needed */
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  object-fit: cover;
+}
+
+.project:hover .project-thumbnail {
+  transform: scale(1.05);
+}
+
+.project-description {
+  margin-top: 10px;
+  font-size: 14px;
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+
+.project:hover .project-description {
+  color: #61dafb;
+}
+
+@media (max-width: 768px) {
+  .head1 {
+    padding: 10px;
+  }
+
+  .head2 {
+    font-size: 2rem;
+  }
+
+  .projects {
+    padding: 10px;
+  }
+
+  .project-thumbnail {
+    height: 150px; /* Adjust height for smaller screens */
+  }
+
+  .project-description {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .head2 {
+    font-size: 1.5rem;
+  }
+
+  .project-thumbnail {
+    height: 120px; /* Adjust height for smaller screens */
+  }
+
+  .project-description {
+    font-size: 10px;
+  }
+}

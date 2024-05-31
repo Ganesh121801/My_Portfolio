@@ -1,0 +1,54 @@
+/* components/Projects.css */
+.head1 {
+    justify-content: start;
+    color: white;
+    background-color: #282c34;
+  }
+  
+  .head2 {
+    font-size: 3rem;
+  }
+  
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px; /* Gap between grid items */
+    padding: 20px;
+    background-color: #282c34;
+  }
+  
+  .project {
+    text-align: center;
+    transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
+    border: 2px solid transparent;
+    border-radius: 10px;
+  }
+  
+  .project:hover {
+    transform: translateY(-5px);
+    border: 2px solid #61dafb;
+  }
+  
+  .project-thumbnail {
+    width: 100%;
+    max-width: 350px; /* Adjust thumbnail size as needed */
+    height: 30vh;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .project:hover .project-thumbnail {
+    transform: scale(1.05);
+  }
+  
+  .project-description {
+    margin-top: 10px;
+    font-size: 14px;
+    color: white;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .project:hover .project-description {
+    color: #61dafb;
+  }
+  
