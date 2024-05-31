@@ -5,8 +5,8 @@ const Others = () => {
   return (
     <div className='head1' >
     <section className='head2'>Other</section>
-    <section className="projects">
-      <div className="project">
+    <section className="projectss">
+      <div className="projectsss">
         <img src="./imeet.png" alt="Project 1" className="project-thumbnail" />
         <p className="project-description">I have Done internship On React.js In imeet Technology , where i get industrial level experience about how projects , designs are worked .</p>
       </div>

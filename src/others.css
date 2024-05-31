@@ -9,46 +9,46 @@
     font-size: 3rem;
   }
   
-  .projects {
+  .projectss {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    grid-template-columns: repeat(1, 1fr); /* 4 columns */
     gap: 20px; /* Gap between grid items */
     padding: 20px;
     background-color: #282c34;
   }
   
-  .project {
+  .projectsss {
     text-align: center;
     transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
     border: 2px solid transparent;
     border-radius: 10px;
   }
   
-  .project:hover {
+  .projectsss:hover {
     transform: translateY(-5px);
     border: 2px solid #61dafb;
   }
   
-  .project-thumbnail {
+  .projectsss-thumbnail {
     width: 100%;
-    max-width: 350px; /* Adjust thumbnail size as needed */
+    max-width: 150px; /* Adjust thumbnail size as needed */
     height: 30vh;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
   }
   
-  .project:hover .project-thumbnail {
+  .projectsss:hover .project-thumbnail {
     transform: scale(1.05);
   }
   
-  .project-description {
+  .projectsss-description {
     margin-top: 10px;
     font-size: 14px;
     color: white;
     transition: color 0.3s ease-in-out;
   }
   
-  .project:hover .project-description {
+  .projectsss:hover .project-description {
     color: #61dafb;
   }
   

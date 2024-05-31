@@ -1,6 +1,4 @@
-// src/components/Resume.js
 import React from 'react';
-
 import { FaInstagram, FaGithub, FaLinkedin, FaCode } from 'react-icons/fa';
 
 const Resume = () => {
@@ -9,7 +7,7 @@ const Resume = () => {
       <section className="resume-section">
         <div className="resume-content">
           <h2 className="resume-title">My Resume</h2>
-          <a href="../myResume.pdf" target="_blank" className="resume-link">Open My Resume</a>
+          <a href={process.env.PUBLIC_URL + '/resume.pdf'} target="_blank" rel="noopener noreferrer" className="resume-link">Open My Resume</a>
         </div>
         <div className="social-icons">
           <a href="https://www.instagram.com/its_prasad1218/" target="_blank" rel="noopener noreferrer" className="social-icon">

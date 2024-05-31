@@ -33,7 +33,7 @@ html {
 }
 
 .profile-picture {
-  background-image: url('../public/my.png');
+  background-image: url('../public/pfp.avif');
   width: 140px;
   height: 140px;
   border-radius: 50%;
@@ -50,7 +50,7 @@ html {
 }
 
 .follow-button {
-  margin-left: auto;
+  margin-left: 700px;
 }
 
 .instagram-button {

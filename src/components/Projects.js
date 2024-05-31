@@ -1,7 +1,6 @@
 // components/Projects.js
 import React from 'react';
 
-
 const Projects = () => {
   const openLink = (url) => {
     window.open(url, '_blank');
@@ -33,5 +32,3 @@ const Projects = () => {
 }
 
 export default Projects;
-
-
