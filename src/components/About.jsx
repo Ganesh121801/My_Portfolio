@@ -56,9 +56,7 @@ const About = () => (
           <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '15px', lineHeight: 1.8, marginBottom: '20px' }}>
             With hands-on experience in the <span style={{ color: '#00D4FF', fontWeight: 600 }}>MERN stack</span>, I've built everything from e-commerce platforms to ML-powered recommendation systems. I bring both technical depth and a strong eye for clean, intuitive UI/UX.
           </p>
-          <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '15px', lineHeight: 1.8, marginBottom: '32px' }}>
-            Beyond coding, I'm deeply interested in <span style={{ color: '#6C63FF', fontWeight: 600 }}>Data Structures & Algorithms</span>, system design, and continuously expanding my skill set.
-          </p>
+        
 
           {/* Tech badges */}
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>

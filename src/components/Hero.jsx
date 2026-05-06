@@ -16,7 +16,7 @@ const Hero = () => {
       overflow: 'hidden',
       background: '#0A0A0F',
       fontFamily: 'Inter, sans-serif',
-      paddingTop: '80px',
+      paddingTop: '100px',
     }}>
 
       {/* Animated gradient blobs */}
@@ -81,37 +81,29 @@ const Hero = () => {
         </motion.div>
 
         {/* Profile picture */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, scale: 0.6 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7, delay: 0.1, type: 'spring', stiffness: 100 }}
           style={{ display: 'flex', justifyContent: 'center', marginBottom: '32px' }}
         >
           <div style={{ position: 'relative', display: 'inline-block' }}>
-            {/* Gradient ring */}
             <div style={{
-              width: '110px', height: '110px', borderRadius: '50%',
+              width: '116px', height: '116px', borderRadius: '50%',
               padding: '3px',
               background: 'linear-gradient(135deg, #6C63FF, #00D4FF)',
               boxShadow: '0 0 40px rgba(108,99,255,0.45), 0 0 80px rgba(108,99,255,0.15)',
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
             }}>
-              <img
-                src="/pfp.avif"
-                alt="Ganesh More"
-                style={{
-                  width: '100%', height: '100%',
-                  borderRadius: '50%',
-                  objectFit: 'cover',
-                  background: '#1a1a2e',
-                  display: 'block',
-                }}
-                onError={e => {
-                  e.target.style.display = 'none';
-                  e.target.parentNode.style.background = 'linear-gradient(135deg, #6C63FF, #00D4FF)';
-                }}
-              />
+              <div style={{
+                width: '110px', height: '110px',
+                borderRadius: '50%',
+                backgroundImage: 'url(/pfp.avif)',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundColor: '#1a1a2e',
+              }} />
             </div>
-            {/* Online dot */}
             <motion.div
               animate={{ scale: [1, 1.3, 1] }}
               transition={{ duration: 2, repeat: Infinity }}
@@ -122,7 +114,7 @@ const Hero = () => {
               }}
             />
           </div>
-        </motion.div>
+        </motion.div> */}
 
         {/* Name */}
         <motion.h1
@@ -277,6 +269,8 @@ const Hero = () => {
                 justifyContent: 'center',
                 textDecoration: 'none',
                 transition: 'all 0.2s',
+                flexShrink: 0,
+                lineHeight: 0,
               }}
               onMouseEnter={e => {
                 e.currentTarget.style.color = '#fff';
@@ -294,7 +288,7 @@ const Hero = () => {
           ))}
         </motion.div>
 
-        {/* Scroll chevron — icon only, no text */}
+        {/* Scroll chevron */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -304,21 +298,23 @@ const Hero = () => {
             display: 'flex', justifyContent: 'center',
           }}
         >
-          <motion.div
+          <motion.button
             animate={{ y: [0, 8, 0] }}
             transition={{ duration: 1.6, repeat: Infinity, ease: 'easeInOut' }}
             onClick={() => scrollTo('#about')}
+            aria-label="Scroll to about section"
             style={{
+              background: 'none',
+              border: 'none',
               cursor: 'pointer',
               color: 'rgba(255,255,255,0.2)',
               display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px',
             }}
           >
-            {/* Chevron down SVG */}
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
               <polyline points="6 9 12 15 18 9" />
             </svg>
-          </motion.div>
+          </motion.button>
         </motion.div>
 
       </div>
